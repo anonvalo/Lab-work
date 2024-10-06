@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function add(a,b)
+        {
+            return a+b;
+        }
+        function sub(a,b)
+        {
+            return a-b;
+        }
+        function mult(a,b)
+        {
+            return a*b;
+        }
+        function div(a,b)
+        {
+            return a/b;
+        }
+        var a = parseInt(prompt("Enter the Number: "));
+        var q = prompt("Enter the Sign ");
+        var b = parseInt(prompt("Enter the Number "));
+        switch (q)
+        {
+            case '+':
+                alert(add(a,b));
+                break;
+            case '-':
+                alert(sub(a,b));
+                break;
+            case '*':
+                alert(mult(a,b));
+                break;
+            case '/':
+                alert(div(a,b));
+                break;
+            default:
+                alert("Invalid Operation");
+                break;
+        }
+    </script>
+</body>
+</html>
